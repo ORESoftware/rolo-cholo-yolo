@@ -64,9 +64,9 @@ or like this:
 ### Instructions on how to replicate the demo
 
 
-1. Clone rolo-cholo-yolo => ```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git```
+1. ### Clone rolo-cholo-yolo => ```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git```
 
-2. For each project (rolo, cholo, and yolo) run:
+2. ### For each project (rolo, cholo, and yolo) run:
 
 ```nlu init```
 
@@ -104,7 +104,7 @@ So, by the way, you have should have run something like this:
 ( cd cholo && nlu init )
 ```
 
-3. Now run the link!
+3. ### Now run the link!
 
 Now, in each .nlu.json file, there should be a array property called "list".
 Notice that "async", "lodash" and "ramda" did not make it into list, but "rolo2", "cholo1" and "yolo3" did.
@@ -121,7 +121,8 @@ Visually inspect the node_modules folder for each project, so see the result.
 
 <br>
 
-4. You can use --dry or --dry-run
+
+#### You can use --dry or --dry-run
 
 For reference, you can use `nlu run --dry` to get a visual of how the linkage will happen, without actually doing any writes.
 
