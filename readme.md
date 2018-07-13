@@ -1,8 +1,9 @@
 
 ## NLU Demo Project
 
+<br>
 
-There are 3 projects in this repo.
+There are 3 projects in this repo:
 
 >
 > 1. rolo
@@ -56,15 +57,16 @@ or like this:
 
 ```
 
-Your main/primary project is whatever project is in in your PWD/CWD.
+<i> => (Your main/primary project is whatever project is in in your PWD/CWD). </i>
 
+<br>
 
 ### Instructions on how to replicate the demo
 
 
-1. Clone nlu_example_projects => ```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git```
+1. Clone rolo-cholo-yolo => ```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git```
 
-2. For each project run:
+2. For each project (rolo, cholo, and yolo) run:
 
 ```nlu init```
 
@@ -102,11 +104,26 @@ So, by the way, you have should have run something like this:
 ( cd cholo && nlu init )
 ```
 
-3.
+3. Now run the link!
 
 Now, in each .nlu.json file, there should be a array property called "list".
 Notice that "async", "lodash" and "ramda" did not make it into list, but "rolo2", "cholo1" and "yolo3" did.
 That is because NLU did not find local copies of ramda and lodash, but did find local copies of the other 3.
+
+Now, you can cd into any project and run:
+
+```bash
+$ nlu run
+```
+
+It will link up the project with the other 2 projects. Trying running `$ nlu run` in all 3 projects.
+Visually inspect the node_modules folder for each project, so see the result.
+
+<br>
+
+4. You can use --dry or --dry-run
+
+For reference, you can use `nlu run --dry` to get a visual of how the linkage will happen, without actually doing any writes.
 
 
 #### Final note
