@@ -53,7 +53,7 @@ or like this:
 ### Instructions on how to replicate the demo
 
 
-1. Clone nlu_example_projects => ```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git`
+1. Clone nlu_example_projects => ```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git```
 
 2. For each project run:
 
@@ -61,6 +61,6 @@ or like this:
 
 When it prompts you for a searchRoot, you can enter this line:
 
-$HOME/location/foo:$HOME/location/rolo:$HOME/location/cholo
+`$HOME/<location>/foo:$HOME/<location>/rolo:$HOME/<location>/cholo`
 
-where location is the path to where you cloned the repo.
+where <location> is the path to where you cloned the repo.
