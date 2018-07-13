@@ -8,7 +8,7 @@ There are 3 projects in this repo:
 >
 > 1. rolo
 > 2. cholo
-> 3. yolo  (the directory is called foo, for a reason)
+> 3. yolo
 >
 
 
@@ -61,10 +61,14 @@ or like this:
 
 <br>
 
-### Instructions on how to replicate the demo
+## Instructions on how to replicate/run the demo
 
 
-1. ### Clone rolo-cholo-yolo => ```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git```
+1. ### Clone rolo-cholo-yolo on your local system
+
+```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git```
+
+<br>
 
 2. ### For each project (rolo, cholo, and yolo) run:
 
@@ -72,7 +76,7 @@ or like this:
 
 When it prompts you for a `searchRoot`, you can enter this line:
 
-`$HOME/<location>/foo:$HOME/<location>/rolo:$HOME/<location>/cholo`
+`$HOME/<location>/yolo:$HOME/<location>/rolo:$HOME/<location>/cholo`
 
 where `<location>` is the path to where you cloned the repo. Using environment varables for `searchRoots`
 allows you to work on projects with other people, or yourself, if you work on more than one machine.
@@ -99,7 +103,7 @@ Essentially each machine can have it's own definition for the searchRoot(s) of y
 So, by the way, you have should have run something like this:
 
 ```bash
-( cd foo && nlu init )
+( cd rolo && nlu init )
 ( cd yolo && nlu init )
 ( cd cholo && nlu init )
 ```
@@ -126,6 +130,8 @@ Visually inspect the node_modules folder for each project, so see the result.
 
 For reference, you can use `nlu run --dry` to get a visual of how the linkage will happen, without actually doing any writes.
 
+
+<br>
 
 #### Final note
 
