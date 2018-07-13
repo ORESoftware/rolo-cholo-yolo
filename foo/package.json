@@ -1,0 +1,14 @@
+{
+  "name": "yolo3",
+  "bin": {
+    "yolo3": "index.js"
+  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "cholo1": "latest",
+    "rolo2": "latest",
+    "lodash": "latest"
+  }
+}
