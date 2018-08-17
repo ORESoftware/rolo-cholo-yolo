@@ -1,9 +1,19 @@
 
 ## NLU Demo Project
 
+## Intro
+
+npm-link-up is part of multi-pronged attack to make multi-repos easier to manage with NPM.
+
+<b> The current pieces are: <b>
+
+* [npm-link-up (NLU)](https://github.com/ORESoftware/npm-link-up) => links multiple NPM packages together for local development
+* [r2g](https://github.com/ORESoftware/r2g) => tests local packages <i>properly</i> before publishing to NPM
+* [npp](https://github.com/ORESoftware/npp) => publish multiple packages and sync their semver versions
+
 <br>
 
-There are 3 projects in this repo:
+<b> There are 3 projects in this git repo: </b>
 
 >
 > 1. rolo
@@ -11,6 +21,7 @@ There are 3 projects in this repo:
 > 3. yolo
 >
 
+<b> 
 
 Each project depends on the 2 other projects, to demonstrate NLU working with circular deps.
 NLU works by searching your fs for relevant projects. To restrict the search you use an env variable,
@@ -57,7 +68,7 @@ or like this:
 
 ```
 
-<i> => (Your main/primary project is whatever project is in in your PWD/CWD). </i>
+<i> => (Your main/primary project is whatever project is in your PWD/CWD). </i>
 
 <br>
 
@@ -97,8 +108,8 @@ Then in your .nlu.json files, you can use:
 }
 ```
 
-And for each developer/machine that works on rolo-yolo-cholo, they can define `$my_nlu_search_root` to whatever path they wish.
-Essentially each machine can have it's own definition for the searchRoot(s) of your dependency tree.
+And for each developer/machine that works on rolo/yolo/cholo, they can define `$my_nlu_search_root` to whatever path they wish.
+Essentially each machine can have its own definition for the searchRoot(s) of your dependency tree.
 
 So, by the way, you have should have run something like this:
 
@@ -113,6 +124,8 @@ So, by the way, you have should have run something like this:
 Now, in each .nlu.json file, there should be a array property called "list".
 Notice that "async", "lodash" and "ramda" did not make it into list, but "rolo2", "cholo1" and "yolo3" did.
 That is because NLU did not find local copies of ramda and lodash, but did find local copies of the other 3.
+
+<br>
 
 Now, you can cd into any project and run:
 
