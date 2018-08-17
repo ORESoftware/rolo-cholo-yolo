@@ -1,8 +1,17 @@
 
 ## NLU Demo Project
 
+#### This repo accommpanies the following video:
+
+<link to video>
+
+<br>
+
+Use this demo project to better understand how npm-link-up works.
+
 ## Intro
 
+npm-link-up allows you to declaratively link projects together for local development. <br>
 npm-link-up is part of multi-pronged attack to make multi-repos easier to manage with NPM.
 
 <b> The current pieces are: <b>
@@ -75,27 +84,49 @@ or like this:
 ## Instructions on how to replicate/run the demo
 
 
-1. ### Clone rolo-cholo-yolo on your local system
+1. Install npm-link-up (best to have the latest):
+
+```bash
+$ npm i -g npm-link-up
+```
+
+2. ### Clone rolo-cholo-yolo on your local system
 
 ```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git```
 
 <br>
 
+3. ### cd into the cloned project, and run $ pwd
+
+You should get something like this:
+
+```
+/home/you/projects/rolo-cholo-yolo
+```
+
 2. ### For each project (rolo, cholo, and yolo) run:
 
-```nlu init```
+```bash
+$ nlu init
+```
 
 When it prompts you for a `searchRoot`, you can enter this line:
 
-`$HOME/<location>/yolo:$HOME/<location>/rolo:$HOME/<location>/cholo`
+```
+/home/you/projects/rolo-cholo-yolo
+```
 
-where `<location>` is the path to where you cloned the repo. Using environment varables for `searchRoots`
-allows you to work on projects with other people, or yourself, if you work on more than one machine.
-
-So as another step, create this env var and add it to bashrc or bash_profile:
+or better yet, enter this:
 
 ```
-export my_nlu_search_root="$HOME/<location>";
+$HOME/projects/rolo-cholo-yolo
+```
+
+Using environment varables for `searchRoots` allows you to work on projects with other people, or yourself, if you work on more than one machine.
+So as another step, create this env var and add it to ~/.bashrc or ~/.bash_profile:
+
+```
+export my_nlu_search_root="$HOME/projects/rolo-cholo-yolo";
 ```
 
 Then in your .nlu.json files, you can use:
@@ -108,8 +139,29 @@ Then in your .nlu.json files, you can use:
 }
 ```
 
-And for each developer/machine that works on rolo/yolo/cholo, they can define `$my_nlu_search_root` to whatever path they wish.
+And for each developer/machine that works on rolo/yolo/cholo, they can define `$my_nlu_search_root` to whatever path you want.
 Essentially each machine can have its own definition for the searchRoot(s) of your dependency tree.
+
+If you want to keep things ever simpler, you can just use relative paths:
+
+```json
+{
+  "searchRoots":[
+    ".."
+  ]
+}
+```
+
+If all projects are in the same directory, the above would work. To start searching two directories below, then this is best:
+
+```json
+{
+  "searchRoots":[
+       "../../"
+  ]
+}
+```
+
 
 So, by the way, you have should have run something like this:
 
@@ -121,19 +173,19 @@ So, by the way, you have should have run something like this:
 
 3. ### Now run the link!
 
-Now, in each .nlu.json file, there should be a array property called "list".
+Now, in each `.nlu.json` file, there should be a array property called "list".
 Notice that "async", "lodash" and "ramda" did not make it into list, but "rolo2", "cholo1" and "yolo3" did.
 That is because NLU did not find local copies of ramda and lodash, but did find local copies of the other 3.
 
 <br>
 
-Now, you can cd into any project and run:
+Now, you can cd into any of the 3 packages and run:
 
 ```bash
 $ nlu run
 ```
 
-It will link up the project with the other 2 projects. Trying running `$ nlu run` in all 3 projects.
+It will link up the project with the other 2 projects. Try running `$ nlu run` in all 3 projects.
 Visually inspect the node_modules folder for each project, so see the result.
 
 <br>
