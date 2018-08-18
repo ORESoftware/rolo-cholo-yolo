@@ -86,15 +86,21 @@ or like this:
 
 1. Install npm-link-up (best to have the latest):
 
-```bash
-$ npm i -g npm-link-up
-```
+>
+>```bash
+>$ npm i -g npm-link-up
+>```
+>
 
 <br>
 
 2. Clone rolo-cholo-yolo on your local system
 
-```git clone https://github.com/ORESoftware/rolo-cholo-yolo.git```
+>
+>```bash
+>$ git clone https://github.com/ORESoftware/rolo-cholo-yolo.git
+>```
+>
 
 <br>
 
