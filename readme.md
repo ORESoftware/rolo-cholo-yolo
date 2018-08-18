@@ -14,7 +14,7 @@ Use this demo project to better understand how npm-link-up works.
 npm-link-up allows you to declaratively link projects together for local development. <br>
 npm-link-up is part of multi-pronged attack to make multi-repos easier to manage with NPM.
 
-<b> The current pieces are: <b>
+<b> The current pieces are: </b>
 
 * [npm-link-up (NLU)](https://github.com/ORESoftware/npm-link-up) => links multiple NPM packages together for local development
 * [r2g](https://github.com/ORESoftware/r2g) => tests local packages <i>properly</i> before publishing to NPM
@@ -30,7 +30,7 @@ npm-link-up is part of multi-pronged attack to make multi-repos easier to manage
 > 3. yolo
 >
 
-<b> 
+<br> 
 
 Each project depends on the 2 other projects, to demonstrate NLU working with circular deps.
 NLU works by searching your fs for relevant projects. To restrict the search you use an env variable,
