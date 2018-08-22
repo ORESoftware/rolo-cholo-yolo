@@ -83,12 +83,16 @@ or like this:
 
 #### As you can see from this image, rolo cholo and yolo are each linked to each other:
 
-<img width="700px" align="right" src="https://raw.githubusercontent.com/oresoftware/media/master/namespaces/nlu/nlu-rolo-cholo-yolo.jpg">
+<img width="300px" align="right" src="https://raw.githubusercontent.com/oresoftware/media/master/namespaces/nlu/nlu-rolo-cholo-yolo.jpg">
 
 <br>
 
 These 3 NPM packages could be in a mono-repo or could be separated into different VCS repos, doesn't really matter.
 We are going to link the packages together by way of their respective node_modules folders, using npm-link-up.
+
+<br>
+
+<br>
 
 <br>
 
