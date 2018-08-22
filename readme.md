@@ -191,13 +191,13 @@ If you want to keep things ever simpler, you can just use relative paths:
 >```
 >
 
-If all projects are in the same directory, the above would work. To start searching two directories below, then this is best:
+If all projects are in the same directory, the above would work. This would be equivalent to the above:
 
 >
 >```json
 >{
 >  "searchRoots":[
->       "../../"
+>       "../../packages"
 >  ]
 >}
 >```
