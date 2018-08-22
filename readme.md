@@ -1,7 +1,7 @@
 
 ## NLU Demo Project
 
-#### This repo accommpanies the following video:
+#### This repo accompanies the following video:
 
 <link to video>
 
