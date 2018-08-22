@@ -131,7 +131,7 @@ You should get something like this:
 
 <br>
 
-4. For each project (rolo, cholo, and yolo) run:
+4. For each package in the packages folder (rolo, cholo, and yolo) run:
 
 >
 >```bash
