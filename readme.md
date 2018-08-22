@@ -83,7 +83,7 @@ or like this:
 
 #### As you can see from this image, rolo cholo and yolo are each linked to each other:
 
-<img width="300px" align="right" src="https://raw.githubusercontent.com/oresoftware/media/master/namespaces/nlu/nlu-rolo-cholo-yolo.jpg">
+<img width="400px" align="right" src="https://raw.githubusercontent.com/oresoftware/media/master/namespaces/nlu/nlu-rolo-cholo-yolo.jpg">
 
 <br>
 
