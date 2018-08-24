@@ -244,9 +244,7 @@ For reference, you can use `nlu run --dry` to get a visual of how the linkage wi
 
 <br>
 
-##### Final note
+##### Tips, FAQ, etc
 
-You may be thinking: rolo-yolo-cholo is a monorepo. It sure is. But the reason why mono-repos are not the answer, is because some projects
-do *not* belong in the mono-repo but still need to be included as a dependency of projects in the monorepo,
-and so the question is then - how do we link projects that don't belong in the monorepo with projects in the monorepo?
-If you try to answer that question, you will realize we are back to square one.
+For tips or FAQ, see: <br>
+https://github.com/ORESoftware/npm-link-up/tree/master/docs
