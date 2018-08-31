@@ -2,7 +2,7 @@
 ## NLU Demo Project
 
 #### This repo accompanies the following video:
-https://www.youtube.com/watch?v=UwNtrN2rqd0
+goo.gl/a9u1rr
 
 <br>
 
